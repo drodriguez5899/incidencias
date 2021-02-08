@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+     {% for cliente in clientes %}
+        <div >
+            <h4>{{ cliente.nombre }}</h4>
+                    
+            <div>{{ cliente.apellidos }}</div>
+           
+        </div>
+    {% else %}
+        No hay ningún artículo a la venta
+    {% endfor %}
+{% endblock %}
